@@ -1,6 +1,6 @@
 #! /bin/bash
 
-diceNum=$(( RANDOM%5 + 1 ))
+diceNum=$(( RANDOM%6 + 1 ))
 case $diceNum in
 	1) echo "First Face"
 		;;
@@ -12,5 +12,7 @@ case $diceNum in
 		;;
 	5) echo "Fifth Face"
 		;;
-	*) echo "Doesn't belong to sixth face"
+	6) echo "Sixth Face"
+		;;
+	*) echo "Out of the bound of Dice"
 esac
