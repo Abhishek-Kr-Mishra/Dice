@@ -1,6 +1,6 @@
 #! /bin/bash
 
-diceNum=$(( RANDOM% + 1 ))
+diceNum=$(( RANDOM%4 + 1 ))
 case $diceNum in
 	1) echo "First Face"
 		;;
@@ -8,5 +8,7 @@ case $diceNum in
 		;;
 	3) echo "Third Face"
 		;;
-	*) echo "Not among four to six faces"
+	4) echo "Fourth Face"
+		;;
+	*) echo "Not among five to six faces"
 esac
